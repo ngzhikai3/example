@@ -3,7 +3,7 @@
 
 <head>
 
-    <title>index</title>
+    <title>Exercise 1</title>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,7 +27,7 @@
                     </li>
                 </ul>
 
-                <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
+                <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -67,7 +67,7 @@
                         <div class="py-5 px-3 bg-light">
                             <h1>Learn to Create Websites</h1>
                             <p>In today's world internet is the most popular way of connecting with people. At <a
-                                    href="#">tutorialrepublic.com</a> you will learn the essential web development
+                                    href="#" class="text-decoration-none">tutorialrepublic.com</a> you will learn the essential web development
                                 technologies
                                 along with real life practise example, so that you can create your own website to
                                 connect with the
@@ -92,7 +92,7 @@
                         <div class="py-5 px-3" style="background-image: url(../week2/images/background2021.jpg)">
                             <h1 class="text-white">Learn to Create Websites</h1>
                             <p class="text-white">In today's world internet is the most popular way of connecting with
-                                people. At <a href="#">tutorialrepublic.com</a> you will learn the essential web
+                                people. At <a href="#" class="text-decoration-none">tutorialrepublic.com</a> you will learn the essential web
                                 development
                                 technologies
                                 along with real life practise example, so that you can create your own website to
@@ -171,7 +171,15 @@
 
         </div>
     </div>
-    </div>
+
+    <script>
+        const myModal = document.getElementById('myModal')
+        const myInput = document.getElementById('myInput')
+
+        myModal.addEventListener('shown.bs.modal', () => {
+            myInput.focus()
+        })
+    </script>
 </body>
 
 </html>
